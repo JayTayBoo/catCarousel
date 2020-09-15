@@ -1,3 +1,4 @@
 $('.thumbnail').on('click', e => {
-  console.log(e.target);
+  const imgSource = $(e.currentTarget).find('img').attr('src');
+  $('.hero img').attr('src', imgSource);
 });
